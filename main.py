@@ -20,6 +20,13 @@ print(hashed)
 print("\nVerificando a senha...")
 password_test = input("\nDigite novamente a senha para verificar: ").encode("utf-8")
 
+# DEMONSTRAÇÃO:
+hashed = bcrypt.hashpw(password, bcrypt.gensalt())
+
+# Percebe-se que o hash é diferente
+print("\nO resultado é: ")
+print(hashed)
+
 """
 --- COMPARAÇÃO DE SENHA ---
 
